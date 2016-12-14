@@ -1,7 +1,7 @@
 <?php include'../../include/header.php';?>
 
 <div class="wrapper">
-    <div class="sidebar" data-color="red" data-image="../../assets/img/5.jpg">
+    <div class="sidebar" data-color="green" data-image="../../assets/img/sidebar-5.jpg">
 
     <!--
 
@@ -34,6 +34,18 @@
                     <a href="emr_sheet">
                         <i class="pe-7s-file"></i>
                         <p>EMR Sheet</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="room_mg">
+                        <i class="pe-7s-note2"></i>
+                        <p>Room Managment</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="nurse">
+                        <i class="pe-7s-bandaid"></i>
+                        <p>Nurse Module</p>
                     </a>
                 </li>
                 <li>

@@ -30,7 +30,7 @@
                         <p>Patient Management</p>
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="emr_sheet">
                         <i class="pe-7s-file"></i>
                         <p>EMR Sheet</p>
@@ -48,7 +48,7 @@
                         <p>Nurse Module</p>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="reports">
                         <i class="pe-7s-albums"></i>
                         <p>Report Generation</p>
@@ -68,7 +68,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><i class=""></i> EMR Sheet</a>
+                    <a class="navbar-brand" href="#"><i class=""></i> Report Generation</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-left">

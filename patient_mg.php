@@ -11,7 +11,7 @@
     -->
 
     	<div class="sidebar-wrapper">
-             <div class="logo">
+            <div class="logo">
                 <a href="#" class="simple-text">
                     Smart H.
                 </a>
@@ -24,13 +24,13 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="patient_mg">
                         <i class="pe-7s-folder"></i>
                         <p>Patient Management</p>
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="emr_sheet">
                         <i class="pe-7s-file"></i>
                         <p>EMR Sheet</p>
@@ -68,7 +68,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><i class=""></i> EMR Sheet</a>
+                    <a class="navbar-brand" href="#"><i class=""></i> Patient Management</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-left">
