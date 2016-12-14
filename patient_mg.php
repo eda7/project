@@ -1,7 +1,7 @@
 <?php include'../../include/header.php';?>
 
 <div class="wrapper">
-    <div class="sidebar" data-color="green" data-image="../../assets/img/sidebar-5.jpg">
+    <div class="sidebar" data-color="blue" data-image="../../assets/img/sidebar-2.jpg">
 
     <!--
 
@@ -11,7 +11,7 @@
     -->
 
     	<div class="sidebar-wrapper">
-            <div class="logo">
+           <div class="logo">
                 <a href="#" class="simple-text">
                     Smart H.
                 </a>
@@ -37,15 +37,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="room_mg">
-                        <i class="pe-7s-note2"></i>
-                        <p>Room Managment</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="nurse">
-                        <i class="pe-7s-bandaid"></i>
-                        <p>Nurse Module</p>
+                    <a href="doctor">
+                        <i class="pe-7s-eyedropper"></i>
+                        <p>Doctor Module</p>
                     </a>
                 </li>
                 <li>
@@ -55,7 +49,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </div>    
     </div>
 
     <div class="main-panel">
