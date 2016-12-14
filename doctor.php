@@ -1,10 +1,19 @@
-<?php session_start(); ?>
 <?php include'../../include/functions.php';?>
+<?php session_start(); check_session();?>
 <?php include'../../include/db_conn.php';?>
 <?php include'../../include/header.php';?>
+<?php include'../../include/search_modal.php';?>
+
 
 <div class="wrapper">
-    <div class="sidebar" data-color="blue" data-image="../../assets/img/sidebar-2.jpg">
+    <div class="sidebar" data-color="black" data-image="../../assets/img/sidebar-4.jpg">
+
+    <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
 
     	<div class="sidebar-wrapper">
             <div class="logo">
@@ -32,10 +41,34 @@
                         <p>EMR Sheet</p>
                     </a>
                 </li>
+                <li>
+                    <a href="room_mg">
+                        <i class="pe-7s-note2"></i>
+                        <p>Room Managment</p>
+                    </a>
+                </li>
                 <li class="active">
                     <a href="doctor">
                         <i class="pe-7s-eyedropper"></i>
                         <p>Doctor Module</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="nurse">
+                        <i class="pe-7s-bandaid"></i>
+                        <p>Nurse Module</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user_mg">
+                        <i class="pe-7s-user"></i>
+                        <p>User Management</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin">
+                        <i class="pe-7s-key"></i>
+                        <p>Administrator</p>
                     </a>
                 </li>
                 <li>
@@ -44,8 +77,14 @@
                         <p>Report Generation</p>
                     </a>
                 </li>
+                <li>
+                    <a href="billing">
+                        <i class="pe-7s-calculator"></i>
+                        <p>Billing</p>
+                    </a>
+                </li>
             </ul>
-        </div>    
+    	</div>
     </div>
 
     <div class="main-panel">
@@ -64,7 +103,7 @@
                     <ul class="nav navbar-nav navbar-left">
                         <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-globe"></i>
+                                    <i class="glyphicon glyphicon-globe"></i>
                                     <b class="caret"></b>
                                     <?php //<span class="notification"></span>?>
                               </a>
@@ -77,8 +116,8 @@
                               </ul>
                         </li>
                         <li>
-                           <a href="">
-                                <i class="fa fa-search"></i>
+                           <a href="" data-toggle="modal" data-target="#searchmodal">
+                                <i class="glyphicon glyphicon-search"></i>
                             </a>
                         </li>
                     </ul>
@@ -86,18 +125,13 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    Dropdown
+                                    <?php user_session();?>
                                     <b class="caret"></b>
                               </a>
                               <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something</a></li>
+                                <li><a href="user_profile">User Profile</a></li>
                                 <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                
+                                <li><a href="../../include/logout.php">Logout</a></li>
                               </ul>
                         </li>
                     </ul>
